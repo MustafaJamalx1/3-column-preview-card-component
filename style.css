@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 62.5%;
+  color: hsl(0, 0%, 95%);
+}
+
+.home {
+  max-width: 120rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  max-width: 65%;
+  max-height: auto;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+.part {
+  padding: 3rem;
+}
+.img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.section-header {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.section-p {
+  font-size: 0.8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.6;
+  margin-bottom: 6rem;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 0.8rem 1.6rem;
+  background-color: hsl(0, 0%, 95%);
+  color: ;
+  border-radius: 100px;
+  font-size: 01rem;
+  border: 2px solid #fff;
+}
+.btn:hover,
+.btn:active {
+  background: none;
+  color: hsl(0, 0%, 95%);
+}
+.orange-section {
+  background-color: hsl(31, 77%, 52%);
+}
+.orange-btn {
+  color: hsl(31, 77%, 52%);
+}
+.blue-section {
+  background-color: hsl(184, 100%, 22%);
+}
+.blue-btn {
+  color: hsl(184, 100%, 22%);
+}
+.green-section {
+  background-color: hsl(179, 100%, 13%);
+}
+.green-btn {
+  color: hsl(179, 100%, 13%);
+}
+@media (width<400px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+} ;
